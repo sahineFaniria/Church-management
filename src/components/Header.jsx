@@ -36,7 +36,7 @@ const Header = () => {
                         
                         <li  className=" cursor-pointer hover:text-neutral-950 hover:font-semibold transition-all">
                             <Button radius="full" className="bg-gradient-to-tr from-blue-500 to-green-500 text-white shadow-lg" onPress={onOpen}>
-                                Sign up
+                                S'inscrire
                             </Button>
                         </li>
                     </ul>
