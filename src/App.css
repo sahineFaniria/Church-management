@@ -1,0 +1,73 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  overflow: hidden;
+  background-image: url('images/biz.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.text{
+  font-size: clamp(1rem, (2.5vw), 4rem);
+}
+
+.change-bg {
+  background-image: url('images/biz2.jpg');
+}
+
+.anime{
+  animation: mouve 3s ease-in-out infinite;
+  transition: all 3s;
+}
+
+@keyframes mouve {
+  0%, 100%{
+    transform: translateY(10%);
+    /* opacity: 1; */
+  }
+
+ 
+  50%{
+      transform: translateY(-5%);
+      /* opacity: 1; */
+  }
+  75%{
+    transform: translateY(5%);
+    /* opacity: 0.9; */
+  }
+}
+
+.gradient{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.navigation {
+  width: 200px; /* Adjust width as needed */
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    width: 100%; /* Set to 100% for full width on small screens */
+  }
+}
+
+.content {
+  display: flex; /* Enable Flexbox layout */
+  flex-direction: row; /* Arrange elements horizontally on larger screens */
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+  }
+}
+
+
+
+
