@@ -13,6 +13,19 @@
   height: 100vh;
 }
 
+/* Scroll bar */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Couleur de l'arrière-plan de la piste */
+}
+::-webkit-scrollbar-thumb {
+  background: #888; /* Couleur de la poignée de défilement */
+  border-radius: 8px;
+}
+
 .text{
   font-size: clamp(1rem, (2.5vw), 4rem);
 }

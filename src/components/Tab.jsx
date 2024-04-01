@@ -8,14 +8,14 @@ import {Outlet} from 'react-router-dom';
 
 
 
-const Tab = ({show}) => {
+const Tab = () => {
 
-    const [rot, setRot] = useState();
+    
 
     return(
 
-        <div className=" rounded-s-xl w-[100%] md:w-[70%] h-full px-6 py-6 overflow-x-hidden  overflow-y-auto  bg-white ">
-                <FontAwesomeIcon className={`absolute right-6 block md:hidden hover:cursor-pointer ${rot && ' rotate-90'}  `} onClick={show}  icon={faLinesLeaning}/>
+        <div className="bg-white rounded-s-xl w-[100%] md:w-[70%] h-full px-6 py-6 overflow-x-hidden  overflow-y-auto scroo ">
+                <FontAwesomeIcon className="absolute right-6 block md:hidden hover:cursor-pointer hover:rotate-90"   icon={faLinesLeaning}/>
                 <div>
                     <p className=" text-2xl font-bold">Tabeau de bord</p>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit laboriosam magni cumque fugit labore.</p>
