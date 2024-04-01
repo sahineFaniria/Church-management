@@ -22,9 +22,7 @@ const Landing = () => {
                 <Button className=' mt-10' color="danger"  onPress={onOpen}>
                    Se connecter
                 </Button>
-                <Button className=' mt-10 ml-2' color="danger">
-                   S'inscrire
-                </Button>
+              
                 <div className='hidden md:block'>
                     <Switch className='absolute  right-4 top-[40%] anime'
                     classNames={{
@@ -65,7 +63,7 @@ const Landing = () => {
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1">Login</ModalHeader>
+              <ModalHeader className="flex flex-col gap-1">Se connecter</ModalHeader>
               <ModalBody>
                
                 <Input
@@ -96,16 +94,16 @@ const Landing = () => {
                     Remember me
                   </Checkbox>
                   <Link color="primary" href="#" size="sm">
-                    Forgot password?
+                    Mot de passe oublier?
                   </Link>
                 </div>
               </ModalBody>
               <ModalFooter>
                 <Button color="danger" variant="flat" onPress={onClose}>
-                  Close
+                  Fermer
                 </Button>
                 <Button color="primary" onClick={onLogin} onPress={onClose}>
-                  Login
+                  Se connecter
                 </Button>
               </ModalFooter>
             </>
