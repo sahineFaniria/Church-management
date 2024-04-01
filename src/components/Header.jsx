@@ -28,9 +28,9 @@ const Header = () => {
                                     <FontAwesomeIcon className=" hover:rotate-90 transition ease-in-out delay-150 duration-300" icon={faBarsStaggered}></FontAwesomeIcon>
                                 </DropdownTrigger>
                                 <DropdownMenu aria-label="Example with disabled actions" >
-                                    <DropdownItem key="new">Security</DropdownItem>
-                                    <DropdownItem key="copy">About</DropdownItem>
-                                    <DropdownItem key="edit" className="text-danger" color="danger">Help</DropdownItem>
+                                    <DropdownItem key="new">Accueil</DropdownItem>
+                                    <DropdownItem key="copy">Sécurité</DropdownItem>
+                                    <DropdownItem key="edit" className="text-danger" color="danger">A propos</DropdownItem>
                                 </DropdownMenu>
                             </Dropdown>
                         </Button></li>

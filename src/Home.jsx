@@ -23,7 +23,7 @@ const Home = () => {
   }, [])
 
   return (
-    <div ref={changeBg} className='App w-full overflow-hidden'>
+    <div ref={changeBg} className='App w-full '>
         <Header/>
         <Landing change={change} />
     </div>

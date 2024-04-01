@@ -5,7 +5,7 @@ import about from "../images/eglise.jpg";
 
 const Profile = ({share}) => {
     return(
-        <div className={` md:w-[30%] mt-10 translate-x-[320px] lg:translate-x-0 ${share && 'translate-x-0 z-10'}`}>
+        <div className={` md:w-[30%] mt-10 translate-x-[320px] md:translate-x-0 ${share && 'translate-x-0 z-10'}`}>
 
             <div className=" flex items-center justify-center flex-col">
                 <img className=" w-24 h-24 rounded-full bg-yellow-200" src={pdp} alt="pdp"/>

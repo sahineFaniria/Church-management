@@ -28,7 +28,7 @@ const Navigation = () => {
         <div className=" fixed top-0 left-0 w-[58px] lg:w-60  h-full  overflow-hidden ">
             <div className=" font-bold text-xl h-9 flex items-center z-10 ml-5  py-8">
                 <div className="flex gap-3">
-                    <FontAwesomeIcon className=" mt-[2px]" icon={faChurch}/>
+                    <FontAwesomeIcon className=" mt-[2px] " icon={faChurch}/>
                     <p>EGLISE</p>
                 </div>
             </div>

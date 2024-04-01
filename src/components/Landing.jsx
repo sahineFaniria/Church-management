@@ -47,7 +47,7 @@ const Landing = ({change}) => {
                     <div className="flex flex-col gap-1 ">
                         <p className="text-medium">God bless us</p>
                         <p className="text-tiny text-default-400">
-                        Fa ny fahasoavan'Andriamanitra no nahatoy izao ahy
+                        Fa ny fahasoavan'Andriamanitra no nahatoy izao ahy.
                         </p>
                     </div>
                     </Switch>
