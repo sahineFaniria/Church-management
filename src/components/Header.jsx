@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChurch, faUser, faBarsStaggered } from '@fortawesome/free-solid-svg-icons';
-import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Checkbox, Input, Link, Dropdown, DropdownTrigger, DropdownMenu, DropdownItem} from "@nextui-org/react";
+import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Checkbox, Input, Dropdown, DropdownTrigger, DropdownMenu, DropdownItem} from "@nextui-org/react";
 
 
 
@@ -18,13 +18,14 @@ const Header = () => {
                     <p className="font-bold text-lg text-black">ChurchSocial</p>
                 </div>
                 <div>
-                    <ul className="flex flex-wrap gap-0 md:gap-9 text-neutral-700 font-semibold">
-                        <li className=" hidden md:block cursor-pointer hover:text-neutral-950  hover:font-semibold transition-all" ><Button className=" bg-transparent cursor-pointer hover:text-neutral-950  hover:font-bold transition-all " ><Link className="text-black" to="/dashboard">Security</Link></Button></li>
-                        <li className=" hidden md:block cursor-pointer hover:text-neutral-950  hover:font-semibold transition-all" ><Button className=" bg-transparent cursor-pointer hover:text-neutral-950  hover:font-bold transition-all" >About</Button></li>
-                        <li className=" block md:hidden cursor-pointer hover:text-neutral-950  hover:font-semibold transition-all" ><Button className=" bg-transparent cursor-pointer hover:text-neutral-950  hover:font-bold transition-all" >
+                    <ul className="flex flex-wrap gap-0 md:gap-9 text-neutral-800 ">
+                        <li className=" hidden md:block cursor-pointer" ><Button className=" bg-transparent  hover:text-neutral-950  hover:font-bold font-bold transition-all" >Accueil</Button></li>
+                        <li className=" hidden md:block cursor-pointer" ><Button className=" bg-transparent  hover:text-neutral-950  hover:font-bold  transition-all" >Sécurité</Button></li>
+                        <li className=" hidden md:block cursor-pointer" ><Button className=" bg-transparent  hover:text-neutral-950  hover:font-bold transition-all" >A propos</Button></li>
+                        <li className=" block md:hidden cursor-pointer" ><Button className=" bg-transparent  hover:text-neutral-950  hover:font-bold transition-all" >
                             <Dropdown backdrop="blur">
                                 <DropdownTrigger>
-                                    <FontAwesomeIcon className=" hover:rotate-90" icon={faBarsStaggered}></FontAwesomeIcon>
+                                    <FontAwesomeIcon className=" hover:rotate-90 transition ease-in-out delay-150 duration-300" icon={faBarsStaggered}></FontAwesomeIcon>
                                 </DropdownTrigger>
                                 <DropdownMenu aria-label="Example with disabled actions" >
                                     <DropdownItem key="new">Security</DropdownItem>

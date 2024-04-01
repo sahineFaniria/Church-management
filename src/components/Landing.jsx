@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import { Modal, ModalContent,Switch, cn, Button, ModalHeader, ModalBody, ModalFooter, useDisclosure, Checkbox, Input, Link} from "@nextui-org/react";
 import { UserContext } from './MyContext';
 // const AuthContext = React.createContext(null);
@@ -8,7 +8,7 @@ import { UserContext } from './MyContext';
 
 
 
-const Landing = () => {
+const Landing = ({change}) => {
 
   const {isOpen, onOpen,  onOpenChange} = useDisclosure();
   const {onLogin} = useContext(UserContext);
@@ -24,23 +24,25 @@ const Landing = () => {
                 </Button>
               
                 <div className='hidden md:block'>
-                    <Switch className='absolute  right-4 top-[40%] anime'
-                    classNames={{
-                        base: cn(
-                        "inline-flex flex-row-reverse w-full max-w-md bg-content1 hover:bg-content2 items-center",
-                        "justify-between cursor-pointer rounded-lg gap-2 p-4 border-2 border-transparent",
-                        "data-[selected=true]:border-primary",
-                        ),
-                        wrapper: "p-0 h-4 overflow-visible",
-                        thumb: cn("w-6 h-6 border-2 shadow-lg",
-                        "group-data-[hover=true]:border-primary",
-                        //selected
-                        "group-data-[selected=true]:ml-6",
-                        // pressed
-                        "group-data-[pressed=true]:w-7",
-                        "group-data-[selected]:group-data-[pressed]:ml-4",
-                        ), 
-                    }}
+                    <Switch 
+                        className='absolute right-4 top-[40%] anime'
+                        onClick={change}
+                        classNames={{
+                            base: cn(
+                            "inline-flex flex-row-reverse w-full max-w-md bg-content1 hover:bg-content2 items-center",
+                            "justify-between cursor-pointer rounded-lg gap-2 p-4 border-2 border-transparent",
+                            // "data-[selected=true]:border-primary",
+                            ),
+                            wrapper: "p-0 h-4 overflow-visible",
+                            thumb: cn("w-6 h-6 border-2 shadow-lg",
+                            "group-data-[hover=true]:border-primary",
+                            //selected
+                            "group-data-[selected=true]:ml-6",
+                            // pressed
+                            "group-data-[pressed=true]:w-7",
+                            "group-data-[selected]:group-data-[pressed]:ml-4",
+                            ), 
+                        }}
                     >
                     <div className="flex flex-col gap-1 ">
                         <p className="text-medium">God bless us</p>
