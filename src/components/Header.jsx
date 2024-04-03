@@ -60,8 +60,8 @@ const Header = () => {
                                     <FontAwesomeIcon className=" mb-2" icon={faUser}/>
                                     
                                 }
-                                label="User"
-                                placeholder="Admin"
+                                label="Nom"
+                                placeholder="Nom"
                                 variant="bordered"
                             />
                             <Input
