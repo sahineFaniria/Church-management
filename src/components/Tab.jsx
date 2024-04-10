@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import about from "../images/about.jpg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChurch, faLinesLeaning } from '@fortawesome/free-solid-svg-icons';
-import { Card, CardHeader, CardBody, CardFooter, Link, Divider, Image} from "@nextui-org/react";
+import { faChurch, faLinesLeaning, faBarsStaggered, faUser } from '@fortawesome/free-solid-svg-icons';
+import { Card, CardHeader, CardBody, CardFooter, Link, Divider, Image, Dropdown, DropdownTrigger, DropdownMenu, DropdownItem} from "@nextui-org/react";
 import {Outlet} from 'react-router-dom';
 
 
@@ -15,7 +15,19 @@ const Tab = () => {
     return(
 
         <div className="bg-white rounded-s-xl w-[100%] md:w-[70%] h-full px-6 py-6 overflow-x-hidden  overflow-y-auto scroo ">
-                <FontAwesomeIcon className="absolute right-6 block md:hidden hover:cursor-pointer hover:rotate-90"   icon={faLinesLeaning}/>
+                <div>
+                     <Dropdown backdrop=" blur" >
+                        <DropdownTrigger>
+                            <FontAwesomeIcon className=" absolute right-6 block md:hidden hover:cursor-pointer hover:rotate-0 rotate-90 transition ease-in-out delay-150 duration-300" icon={faLinesLeaning}></FontAwesomeIcon>
+                        </DropdownTrigger>
+                        <DropdownMenu aria-label="Example with disabled actions" >
+                            <DropdownItem key="edit" className="text-warning" color="warning">Catholique Tanambao <FontAwesomeIcon className=" bg-yellow-200 p-1 rounded-xl" icon={faUser} /> </DropdownItem> 
+                            <DropdownItem key="new">Entrée</DropdownItem>
+                            <DropdownItem key="copy">Sortie</DropdownItem>
+                        </DropdownMenu>
+                    </Dropdown>
+                </div>
+               
                 <div>
                     <p className=" text-2xl font-bold">Tabeau de bord</p>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit laboriosam magni cumque fugit labore.</p>

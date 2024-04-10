@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChurch, faUser, faBarsStaggered } from '@fortawesome/free-solid-svg-icons';
-import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Checkbox, Input, Dropdown, DropdownTrigger, DropdownMenu, DropdownItem} from "@nextui-org/react";
+import { faChurch, faUser, faBarsStaggered, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure, Checkbox, Link, Input, Dropdown, DropdownTrigger, DropdownMenu, DropdownItem} from "@nextui-org/react";
 
 
 
@@ -61,16 +61,16 @@ const Header = () => {
                                     
                                 }
                                 label="Nom"
-                                placeholder="Nom"
+                                placeholder="Nom d'église"
                                 variant="bordered"
                             />
                             <Input
                                 endContent={
-                                <svg className=" w-4 h-4 mb-2" xmlns="http://www.w3.org/2000/svg" id="pass" viewBox="0 0 448 512"><path d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z"/></svg>
+                                    <FontAwesomeIcon className="" icon={faEnvelope} />
                                 }
-                                label="Password"
-                                placeholder="Enter your password"
-                                type="password"
+                                label="Email"
+                                placeholder="Entrer votre email"
+                                type="email"
                                 variant="bordered"
                             />
                              <Input
@@ -78,18 +78,23 @@ const Header = () => {
                                 <svg className=" w-4 h-4 mb-2" xmlns="http://www.w3.org/2000/svg" id="pass" viewBox="0 0 448 512"><path d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z"/></svg>
                                 }
                                 label="Password"
-                                placeholder="Confirm your password"
+                                placeholder="Entrer votre mot de passe"
                                 type="password"
                                 variant="bordered"
                             />
                             <div className="flex py-2 px-1 justify-between">
-                                <Checkbox
+                                {/* <Checkbox
                                 classNames={{
                                     label: "text-small",
                                 }}
                                 >
                                 Remember me
-                                </Checkbox>
+                                </Checkbox> */}
+                                <p className=" text-sm">Vous avez déjà une compte? 
+                                    <Link color="primary" href="#" size="sm">
+                                        Se connecter.
+                                    </Link>
+                                </p>
                                 
                             </div>
                             </ModalBody>

@@ -48,7 +48,7 @@ const Profile = ({share}) => {
                     
                 </div>
                 <div className=" hidden  lg:flex items-center justify-center pt-6" >
-                    <img className="w-full h-36 rounded-xl object-cover" src={about} alt="egli" />
+                    <img className=" w-full h-36 rounded-xl object-cover" src={about} alt="egli" />
                 </div>
             </div>
         </div>
